@@ -24,6 +24,7 @@ import { MessagesPage } from './pages/messages/MessagesPage';
 import { NotificationsPage } from './pages/notifications/NotificationsPage';
 import { DocumentsPage } from './pages/documents/DocumentsPage';
 import { SettingsPage } from './pages/settings/SettingsPage';
+import CalendarPage from './pages/scheduling/CalendarPage';
 import { HelpPage } from './pages/help/HelpPage';
 import { DealsPage } from './pages/deals/DealsPage';
 
@@ -71,6 +72,9 @@ function App() {
           <Route path="/documents" element={<DashboardLayout />}>
             <Route index element={<DocumentsPage />} />
           </Route>
+          <Route path="/calendar" element={<DashboardLayout />}>
+  <Route index element={<CalendarPage />} />
+</Route>
           
           <Route path="/settings" element={<DashboardLayout />}>
             <Route index element={<SettingsPage />} />
